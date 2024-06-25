@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background: seagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff
+}
+
+.container {
+    border: 2px solid #fff;
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title {
+    font-weight: 600;
+    font-size: 25px;
+    margin: 9px 0;
+
+}
+
+.game-display {
+    border: 2px solid #fff;
+    width: 600px;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-display #category {
+    margin: 9px auto;
+}
+
+.hang-display {
+    border: 2px solid #fff;
+    width: 450px;
+    height: 300px;
+}
+
+.hangman-container {
+    display: flex;
+    justify-content: center;
+}
+
+.figure-container {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+.figure-part {
+    display: block;
+}
+
+.word-to-guess {
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    margin: 15px auto;
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 25px;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+.letters-container {
+    border: 2px solid #fff;
+    max-width: 478px;
+    width: 478px;
+    height: 150px;
+    margin: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.letters-container i {
+    margin: auto 5px;
+    padding: 9px 12px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.35s ease-in-out;
+    
+}
+
+#enter {
+    margin-left: 10px;
+    padding-bottom: 20px;
+    transform: rotate(90deg);
+}
+
+
+
+.letters-container i:hover {
+    background: rgb(184, 181, 181);
+}
+
+.letters-container i:active {
+    transform: scale(0.98);
+}
+
+

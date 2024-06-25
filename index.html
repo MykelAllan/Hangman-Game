@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Hangman Game</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Hangman Game</div>
+        <div class="game-display">
+            <h1 id="category">Category: Superhero</h1>
+            <div class="hang-display">
+                <div class="hangman-container">
+                    <svg height="250" width="200" class="figure-container">
+                        <!-- Rod -->
+                        <line x1="60" y1="20" x2="140" y2="20" />
+                        <line x1="140" y1="20" x2="140" y2="50" />
+                        <line x1="60" y1="20" x2="60" y2="230" />
+                        <line x1="20" y1="230" x2="100" y2="230" />
+
+                        <!-- Head -->
+                        <circle cx="140" cy="70" r="20" class="figure-part" />
+                        <!-- Body -->
+                        <line x1="140" y1="90" x2="140" y2="150" class="figure-part" />
+                        <!-- Arms -->
+                        <line x1="140" y1="120" x2="120" y2="100" class="figure-part" />
+                        <line x1="140" y1="120" x2="160" y2="100" class="figure-part" />
+                        <!-- Legs -->
+                        <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
+                        <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
+                    </svg>
+                </div>
+            </div>
+            <div class="word-to-guess"><label id="guess">- - - -</label></div>
+            <div class="letters-container">
+                <i class="letter fa-solid fa-a"></i>
+                <i class="letter fa-solid fa-b"></i>
+                <i class="letter fa-solid fa-c"></i>
+                <i class="letter fa-solid fa-d"></i>
+                <i class="letter fa-solid fa-e"></i>
+                <i class="letter fa-solid fa-f"></i>
+                <i class="letter fa-solid fa-g"></i>
+                <i class="letter fa-solid fa-h"></i>
+                <i id="backspace" class="fa-solid fa-delete-left"></i>
+                <i class="letter fa-solid fa-i"></i>
+                <i class="letter fa-solid fa-j"></i>
+                <i class="letter fa-solid fa-k"></i>
+                <i class="letter fa-solid fa-l"></i>
+                <i class="letter fa-solid fa-m"></i>
+                <i class="letter fa-solid fa-n"></i>
+                <i class="letter fa-solid fa-o"></i>
+                <i class="letter fa-solid fa-p"></i>
+                <i class="letter fa-solid fa-q"></i>
+                <i class="letter fa-solid fa-r"></i>
+                <i class="letter fa-solid fa-s"></i>
+                <i class="letter fa-solid fa-t"></i>
+                <i class="letter fa-solid fa-u"></i>
+                <i class="letter fa-solid fa-v"></i>
+                <i class="letter fa-solid fa-w"></i>
+                <i class="letter fa-solid fa-x"></i>
+                <i class="letter fa-solid fa-y"></i>
+                <i class="letter fa-solid fa-z"></i>
+                <i id="enter" class="fa-solid fa-turn-down"></i>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+
+</html>
