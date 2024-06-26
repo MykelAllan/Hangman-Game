@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //getting elements
     const gameDisplay = document.getElementById('game-display');
+    const menuContainer = document.getElementById('menu-container');
     let startBtn = document.getElementById('start-btn')
     let letter = Array.from(document.querySelectorAll('.letter'));
     let lblCategory = document.getElementById('category');
@@ -43,6 +44,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function startGame() {
         gameDisplay.classList.remove('disabled')
+        menuContainer.classList.add('disabled')
+
+        startBtn.style.display = "none"
 
         chooseACategory();
         choosingAWord() 
@@ -77,17 +81,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         //display the chosen word
         lblWordToGuess.innerText = chosenWord
-
-
-
     }
 
     function updateGuessWord() {
         lblWordToGuess.innerText = guess;
     }
-
-
-
-
 
 })
