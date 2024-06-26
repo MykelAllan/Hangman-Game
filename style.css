@@ -31,6 +31,22 @@ body {
 
 }
 
+/* start-btn */
+.btn {
+    border-radius: 25px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+    width: 100px;
+    height: 35px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.game-display.disabled {
+    display: none;
+}
+
 .game-display {
     border: 2px solid #fff;
     width: 600px;
@@ -116,6 +132,13 @@ body {
 
 .letters-container i:active {
     transform: scale(0.98);
+}
+
+/* when the letter is used */
+.letters-container i.disabled {
+    background-color: #ccc;
+    color: #666;
+    border: 1px solid #999;
 }
 
 

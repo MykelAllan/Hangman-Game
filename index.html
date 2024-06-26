@@ -18,7 +18,8 @@
 <body>
     <div class="container">
         <div class="title">Hangman Game</div>
-        <div class="game-display">
+        <button id="start-btn" class="btn">Start</button>
+        <div id="game-display" class=" disabled game-display">
             <h1 id="category">Category: Superhero</h1>
             <div class="hang-display">
                 <div class="hangman-container">
@@ -52,7 +53,6 @@
                 <i class="letter fa-solid fa-f"></i>
                 <i class="letter fa-solid fa-g"></i>
                 <i class="letter fa-solid fa-h"></i>
-                <i id="backspace" class="fa-solid fa-delete-left"></i>
                 <i class="letter fa-solid fa-i"></i>
                 <i class="letter fa-solid fa-j"></i>
                 <i class="letter fa-solid fa-k"></i>
@@ -70,9 +70,7 @@
                 <i class="letter fa-solid fa-w"></i>
                 <i class="letter fa-solid fa-x"></i>
                 <i class="letter fa-solid fa-y"></i>
-                <i class="letter fa-solid fa-z"></i>
-                <i id="enter" class="fa-solid fa-turn-down"></i>
-
+                <i class="letter disabled fa-solid fa-z"></i>
             </div>
         </div>
     </div>
