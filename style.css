@@ -6,7 +6,9 @@
 }
 
 body {
-    background: seagreen;
+    background: url('assets/img/img.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,13 +18,15 @@ body {
 
 .container {
     border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
     width: 800px;
     height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .title {
@@ -57,6 +61,7 @@ body {
     cursor: pointer;
     font-weight: 600;
     font-size: 35px;
+    transition: 0.35s ease;
 }
 
 .btn:hover {
@@ -68,7 +73,6 @@ body {
 }
 
 .game-display {
-    border: 2px solid #fff;
     width: 600px;
     height: 670px;
     display: flex;
@@ -80,15 +84,44 @@ body {
     margin: 9px auto;
 }
 
-.hang-display {
+/* message-container //game over // victory */
+
+.message-container.disabled {
+    display: none;
+}
+
+.message-container {
     border: 2px solid #fff;
+    border-radius: 10px;
+    width: 650px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.message-container h1 {
+    font-weight: 600;
+    font-size: 65px;
+    margin: auto;
+}
+
+.message-container button {
+    margin-bottom: 15px
+}
+
+.hang-display {
     width: 450px;
     height: 300px;
 }
 
-.hangman-container {
+.game-display .hangman-container {
     display: flex;
     justify-content: center;
+    border: 2px solid #fff;
 }
 
 .figure-container {
@@ -115,7 +148,6 @@ body {
 }
 
 .letters-container {
-    border: 2px solid #fff;
     max-width: 478px;
     width: 478px;
     height: 150px;
@@ -147,7 +179,7 @@ body {
 
 
 .letters-container i:hover {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .letters-container i:active {
