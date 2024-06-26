@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function resetGame() {
-        // Reset all variables
+        // reset all variables
         lettersUsed = [];
         guess = "";
         chosenWord = undefined;
@@ -176,14 +176,13 @@ document.addEventListener('DOMContentLoaded', function () {
         secretWord = undefined;
         lives = 6;
 
-        // Reset UI elements
+        // reset UI elements
         letterBtns.forEach(btn => btn.classList.remove('disabled'));
         hangmanFigures.forEach(part => part.style.display = 'none');
         lblWordToGuess.innerText = "";
         lblMsg.innerText = "";
-        msgContainer.innerHTML = ""
 
-        // Start a new game
+        // start a new game
         startGame();
     }
 })
