@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function () {
         letterBtns.forEach(btn => btn.classList.remove('disabled'));
         hangmanFigures.forEach(part => part.style.display = 'none');
         lblWordToGuess.innerText = "";
-        lblMsg.innerText = "";
+        lblMsg.innerText = ""
 
         // start a new game
         startGame();
