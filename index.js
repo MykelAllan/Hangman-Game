@@ -160,6 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function gameWinner() {
         gameEnd("VICTORY!!")
+        lblWrdRvl.innerText = "" 
     }
 
     function gameEnd(text) {
