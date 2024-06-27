@@ -155,8 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     function gameOver() {
         gameEnd("GAME OVER!!")
-        lblWrdRvl.innerText = "The secret word was: "
-        lblWrdRvlTxt.innerHTML = chosenWord
+        lblWrdRvl.innerText = "The secret word was: " + chosenWord
     }
 
     function gameWinner() {
