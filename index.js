@@ -40,6 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let lblCategory = document.getElementById('category')
     let lblWordToGuess = document.getElementById('guess')
     let lblMsg = document.getElementById('lblMsg')
+    let lblWrdRvl = document.getElementById('wordRvl')
+    let lblWrdRvlTxt = document.getElementById('wordRvl-text')
 
     letterBtns.forEach((letterBtn, index) => {
         letterBtn.addEventListener('click', () => userAction(letterBtn, index))
@@ -152,16 +154,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
     function gameOver() {
-        console.log('Game OVER!!')
-        lblMsg.innerText = "GAME OVER!!"
-        msgContainer.classList.remove('disabled')
-        gameDisplay.classList.add('disabled')
-        isGameRunning = false
+        gameEnd("GAME OVER!!")
+        lblWrdRvl.innerText = "The secret word was: "
+        lblWrdRvlTxt.innerHTML = chosenWord
     }
 
     function gameWinner() {
-        console.log('CONGRATSS!!')
-        lblMsg.innerText = "VICTORY!!"
+        gameEnd("VICTORY!!")
+    }
+
+    function gameEnd(text) {
+        console.log('text')
+        lblMsg.innerText = text
         msgContainer.classList.remove('disabled')
         gameDisplay.classList.add('disabled')
         isGameRunning = false

@@ -101,6 +101,7 @@ body {
     justify-content: center;
 }
 
+
 .message-container h1 {
     font-weight: 600;
     font-size: 65px;
@@ -214,6 +215,11 @@ body {
         padding: 25px;
     }
 
+    #wordRvl {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
     .message-container h1 {
         font-size: 25px;
         margin-bottom: 25px;
@@ -320,6 +326,13 @@ body {
         margin-bottom: 15px;
     }
 
+    #wordRvl {
+        font-size: 25px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        
+    }
+
     .message-container .btn {
         height: 75px;
         font-size: 2em;
@@ -332,6 +345,7 @@ body {
     .container {
         width: 65%;
     }
+
     .game-display {
         width: 75%;
     }
