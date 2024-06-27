@@ -21,8 +21,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(20px);
-    width: 800px;
-    height: 800px;
+    width: 90%;
+    height: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,8 +73,8 @@ body {
 }
 
 .game-display {
-    width: 600px;
-    height: 670px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,7 +93,7 @@ body {
 .message-container {
     border: 2px solid #fff;
     border-radius: 10px;
-    width: 650px;
+    width: 80%;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -101,21 +101,15 @@ body {
     justify-content: center;
 }
 
-
-
 .message-container h1 {
     font-weight: 600;
     font-size: 65px;
     margin: auto;
 }
 
-.message-container button {
-    margin-bottom: 15px
-}
-
 .hang-display {
-    width: 450px;
-    height: 300px;
+    width: 80%;
+    height: 80%;
 }
 
 .game-display .hangman-container {
@@ -129,6 +123,8 @@ body {
     stroke: #fff;
     stroke-width: 4px;
     stroke-linecap: round;
+    width: 200px;
+    height: 250px;
 }
 
 .figure-part {
@@ -148,9 +144,8 @@ body {
 }
 
 .letters-container {
-    max-width: 478px;
-    width: 478px;
-    height: 150px;
+    width: 100%;
+    height: 25%;
     margin: 15px auto;
     display: flex;
     flex-wrap: wrap;
@@ -167,7 +162,6 @@ body {
     border-radius: 3px;
     cursor: pointer;
     transition: 0.35s ease-in-out;
-
 }
 
 #enter {
@@ -191,4 +185,166 @@ body {
     background-color: #ccc;
     color: #666;
     border: 1px solid #999;
+}
+
+/* breakpoints */
+
+/* smaller screens */
+@media screen and (min-width: 350px) {
+    .container {
+        width: 80%;
+        height: auto;
+    }
+
+    .title {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .figure-container {
+        width: 150px;
+        height: 200px;
+        padding: 10px;
+    }
+
+    /* msg */
+    .message-container {
+        height: 35%;
+        margin: 25px;
+        padding: 25px;
+    }
+
+    .message-container h1 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .message-container .btn {
+        height: 30px;
+        font-size: 12px;
+    }
+
+    /* menu */
+    .btn {
+        width: 45%;
+        height: 15%;
+        font-size: 18px;
+    }
+
+    /* game */
+    .game-display h1 {
+        font-size: 1em;
+
+    }
+
+    .game-display .hang-display {
+        height: 35%;
+    }
+
+    .letters-container {
+        width: 100%;
+    }
+
+    .letters-container i {
+        font-size: 10px;
+        padding: 7px 10px;
+        margin: 3px 4px;
+
+    }
+}
+
+@media screen and (min-width: 530px) {
+    .container {
+        width: 70%;
+
+    }
+}
+
+/* medium screens */
+@media screen and (min-width: 620px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 730px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .container {
+        width: 45%;
+    }
+}
+
+/* large screens */
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 70%;
+        height: 750px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .game-display {
+        width: 80%;
+    }
+
+    .game-display #category {
+        font-size: 1.5em;
+    }
+
+    .game-display .hang-display {
+        height: 50%;
+    }
+
+    .figure-container {
+        width: 200px;
+        height: 250px;
+    }
+
+    .letters-container i {
+        margin: auto 5px;
+        padding: 9px 12px;
+        font-size: 1em;
+    }
+
+    /* msg */
+    .message-container h1 {
+        font-size: 3em;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .message-container .btn {
+        height: 75px;
+        font-size: 2em;
+    }
+
+
+}
+
+@media screen and (min-width: 1100px) {
+    .container {
+        width: 65%;
+    }
+    .game-display {
+        width: 75%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 60%;
+        height: 650px;
+    }
+
+    .game-display {
+        width: 60%;
+    }
 }
