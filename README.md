@@ -16,14 +16,14 @@ This project is a web-based Hangman game where users can guess letters to reveal
 
 <div align="center">
 
-    <h3>Desktop View</h3>
-    <img src="https://github.com/MykelAllan/Hangman-Game/blob/main/assets/preview/desktop-prev.png" alt="Desktop View" width="600">
+<h3>Desktop View</h3>
+<img src="https://github.com/MykelAllan/Hangman-Game/blob/main/assets/preview/desktop-prev.png" alt="Desktop View" width="600">
 
-    <h3>Mobile View (Collapsed)</h3>
-    <img src="https://github.com/MykelAllan/Hangman-Game/blob/main/assets/preview/phone-prev.png" alt="Mobile View Collapsed" width="300">
+<h3>Mobile View (Collapsed)</h3>
+<img src="https://github.com/MykelAllan/Hangman-Game/blob/main/assets/preview/phone-prev.png" alt="Mobile View Collapsed" width="300">
 
 </div>
 
 ## Dependencies
 
-- [Font Awesome](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css)
+- [Font Awesome](https://fontawesome.com/)
