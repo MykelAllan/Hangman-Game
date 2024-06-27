@@ -17,10 +17,10 @@ This project is a web-based Hangman game where users can guess letters to reveal
 <div align="center">
 
     <h3>Desktop View</h3>
-    <img src="assets/prev/desktop-prev.png" alt="Desktop View" width="600">
+    <img src="https://github.com/MykelAllan/Hangman-Game/blob/main/assets/preview/desktop-prev.png" alt="Desktop View" width="600">
 
     <h3>Mobile View (Collapsed)</h3>
-    <img src="assets/prev/phone-prev.png" alt="Mobile View Collapsed" width="300">
+    <img src="https://github.com/MykelAllan/Hangman-Game/blob/main/assets/preview/phone-prev.png" alt="Mobile View Collapsed" width="300">
 
 </div>
 
